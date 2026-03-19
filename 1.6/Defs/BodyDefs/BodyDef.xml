@@ -12,14 +12,14 @@
 		</groups>
 		<parts>
 		  <li>
-			<def>CopycatBrain</def> 
+			<def>CopycatSpirit</def> 
 			<coverage>0.0</coverage> 
-			<depth>Hidden</depth>
+			<depth>Inside</depth>
 		  </li>
 		  <li>
-			<def>CopycatLegs</def> 
+			<def>CopycatWill</def> 
 			<coverage>0.0</coverage>
-			<depth>Hidden</depth>
+			<depth>Inside</depth>
 		  </li>
 		</parts>
 	  </corePart>
@@ -32,22 +32,25 @@
 		<skinCovered>false</skinCovered>
 		<solid>true</solid>
 		<bleedRate>0</bleedRate>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 	</BodyPartDef>
 
   <BodyPartDef>
-    <defName>CopycatBrain</defName>
+    <defName>CopycatSpirit</defName>
     <label>사고</label>
     <hitPoints>10</hitPoints> 
 	<solid>true</solid>
+	<bleedRate>0</bleedRate>
     <tags>
       <li>ConsciousnessSource</li> </tags>
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>CopycatAppendages</defName>
+    <defName>CopycatWill</defName>
     <label>의지</label>
     <hitPoints>10</hitPoints>
     <solid>true</solid>
+	<bleedRate>0</bleedRate>
     <tags>
       <li>MovingLimbCore</li> 
 	  <li>ManipulationLimbCore</li> 

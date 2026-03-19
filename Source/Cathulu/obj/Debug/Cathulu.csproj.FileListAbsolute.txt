@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CathuluAwake\1.6\Assemblies\Cathulu.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CathuluAwake\1.6\Assemblies\Cathulu.pdb
+C:\Users\estel\Desktop\저장소\imagestore\mod\Cathulu\obj\Debug\Cathulu.csproj.AssemblyReference.cache
+C:\Users\estel\Desktop\저장소\imagestore\mod\Cathulu\obj\Debug\Cathulu.csproj.CoreCompileInputs.cache
+C:\Users\estel\Desktop\저장소\imagestore\mod\Cathulu\obj\Debug\Cathulu.dll
+C:\Users\estel\Desktop\저장소\imagestore\mod\Cathulu\obj\Debug\Cathulu.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimworldMod_CathuluAwake\Source\Cathulu\obj\Debug\Cathulu.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimworldMod_CathuluAwake\Source\Cathulu\obj\Debug\Cathulu.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimworldMod_CathuluAwake\Source\Cathulu\obj\Debug\Cathulu.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimworldMod_CathuluAwake\Source\Cathulu\obj\Debug\Cathulu.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimworldMod_CathuluAwake\1.6\Assemblies\Cathulu.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimworldMod_CathuluAwake\1.6\Assemblies\Cathulu.pdb
