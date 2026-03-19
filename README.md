@@ -30,6 +30,7 @@
 * Textures : 현재 모드에 사용한 에셋 중 core에 포함되지 않는 커스텀 그래픽 에셋이 포함된 폴더입니다.
 * Source : cs파일 및 솔루션 프로젝트(소스)가 포함된 폴더입니다.
 
-![](Example1.gif)
-<br>
-![](Exmple2.gif)
+<p align="center">
+  <img src="Example1.gif" width="48%">
+  <img src="Exmple2.gif" width="48%">
+</p>
