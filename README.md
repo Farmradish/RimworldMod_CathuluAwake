@@ -32,5 +32,5 @@
 
 <p align="center">
   <img src="Example1.gif" width="48%">
-  <img src="Exmple2.gif" width="48%">
+  <img src="Example2.gif" width="48%">
 </p>
