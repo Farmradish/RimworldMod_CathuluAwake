@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>Nr_DamageVoid</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef]의 끔찍한 파동이 [RECIPIENT_nameDef]의 [recipient_part0_label](을)에 타격을 입혔습니다.</li>
+				<li>r_logentry->알 수 없는 공허가 [RECIPIENT_nameDef] 의 [recipient_part0_label]에 충격을 주었습니다.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+  <EffecterDef>
+    <defName>Nr_EffectDistortionPestilence</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Nr_MoteDistortionExpend</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+  
+    <EffecterDef>
+    <defName>Nr_EffecterMinionIncoming</defName>
+    <maintainTicks>300</maintainTicks>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+        <soundDef>VoidStructure_Emerging</soundDef>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>VoidStructureIncomingSlow</fleckDef>
+        <chancePerTick>1</chancePerTick>
+        <lifespanMaxTicks>150</lifespanMaxTicks>
+        <chancePeriodTicks>40</chancePeriodTicks>
+        <burstCount>1~1</burstCount>
+        <scale>15</scale>
+        <spawnLocType>OnSource</spawnLocType>
+		<color>(0.7, 0.0, 0.0, 1)</color>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <initialDelayTicks>150</initialDelayTicks>
+        <fleckDef>VoidStructureIncomingFast</fleckDef>
+        <chancePerTick>.2</chancePerTick>
+        <chancePeriodTicks>10</chancePeriodTicks>
+        <burstCount>1~1</burstCount>
+        <scale>10</scale>
+        <spawnLocType>OnSource</spawnLocType>
+		<color>(0.9, 0.1, 0.1, 1)</color>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>PsycastSkipFlashEntry</fleckDef>
+        <chancePerTick>1</chancePerTick>
+        <chancePeriodTicks>20</chancePeriodTicks>
+        <burstCount>1~1</burstCount>
+        <scale>1</scale>
+        <rotation>0~0</rotation>
+        <spawnLocType>OnSource</spawnLocType>
+		<color>(0.5, 0.0, 0.0, 1)</color>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <chancePerTick>.1</chancePerTick>
+        <chancePeriodTicks>5</chancePeriodTicks>
+        <fleckDef>PlainFlash</fleckDef>
+        <burstCount>1~1</burstCount>
+        <scale>11</scale>
+        <spawnLocType>OnSource</spawnLocType>
+		<color>(1.0, 0.1, 0.1, 1.0)</color>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <positionRadius>3.9</positionRadius>
+        <chancePeriodTicks>10</chancePeriodTicks>
+        <chancePerTick>.1</chancePerTick>
+        <fleckDef>ElectricalSpark</fleckDef>
+        <soundDef>VoidStructure_EmergeSpark</soundDef>
+        <burstCount>7~9</burstCount>
+        <scale>1~5</scale>
+        <spawnLocType>OnSource</spawnLocType>
+		<color>(1.0, 0.3, 0.3, 1)</color>
+      </li>
+    </children>
+  </EffecterDef>
+  
+  
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>Nr_MoteTransferEnergy</defName>
+    <graphicData>
+      <texPath>Things/Mote/Nr_TransferEnergy</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <mote>
+      <solidTime>0</solidTime>
+      <fadeOutTime>0.6</fadeOutTime>
+    </mote>
+  </ThingDef>
+  
+        <ThingDef ParentName="MoteBase">
+    <defName>Nr_MoteVoidExplosion</defName>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <mote>
+      <solidTime>0.03</solidTime>
+      <fadeOutTime>0.17</fadeOutTime>
+	  <growthRate>1</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Nr_VoidExplosion</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>5.5</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Nr_MoteDistortionExpend</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <solidTime>0.6</solidTime>
+      <growthRate>20</growthRate>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MotePsychicWarmupNeuroquake</shaderType>
+      <texPath>Things/Mote/PsychicDistortionRing</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.9</_distortionIntensity>
+        <_brightnessMultiplier>1.5</_brightnessMultiplier>
+        <_distortionTint>(0, 0, 0.08, 0)</_distortionTint>
+        <_pulseSpeed>250</_pulseSpeed>
+      </shaderParameters>
+      <drawSize>0.3</drawSize>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <EntityCategoryDef>
+    <defName>Nr_Cathulu</defName>
+    <label>cathulu minions</label>
+    <listOrder>100</listOrder>
+  </EntityCategoryDef>
+
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="VoidTouched"]/comps/li[@Class="HediffCompProperties_GiveAbility"]/abilityDefs</xpath>
+        <value>
+            <li>Nr_CallCathulu</li>
+        </value>
+    </Operation>
+</Patch>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <EntityCodexEntryDef>
+        <defName>Nr_CodexOminousLight</defName>
+        <label>ominous light</label>
+        <description>ominous light.</description>
+        <category>Nr_Cathulu</category>
+		<uiIconPath>UI/CodexEntries/DeathPall</uiIconPath>
+		<linkedIncidents>
+			<li>Nr_IncidentOminousLight</li>
+		</linkedIncidents>
+
+		<provocationIncidents>
+			<li>Nr_IncidentOminousLight</li>
+        </provocationIncidents>
+		<orderInCategory>700</orderInCategory>
+    </EntityCodexEntryDef>
+</Defs>

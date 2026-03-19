@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <DamageDef>
+        <defName>Nr_VoidPainBlast</defName> 
+        <label>공허 고통</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} has died in an void attacking.</deathMessage>
+        <hediff>Bruise</hediff> 
+        <hediffSolid>Crack</hediffSolid>
+        <armorCategory>Sharp</armorCategory>
+		<defaultArmorPenetration>100.0</defaultArmorPenetration>
+        <defaultDamage>2</defaultDamage>
+		<defaultStoppingPower>1</defaultStoppingPower>
+		<buildingDamageFactor>0</buildingDamageFactor>
+		<plantDamageFactor>0</plantDamageFactor>
+		<explosionAffectOutsidePartsOnly>true</explosionAffectOutsidePartsOnly>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<combatLogRules>Nr_DamageVoid</combatLogRules>
+        <additionalHediffs>
+            <li>
+                <hediff>Nr_HediffVoidPain</hediff> 
+                <severityPerDamageDealt>0.3</severityPerDamageDealt> 
+            </li>
+        </additionalHediffs>
+		
+    </DamageDef>
+
+</Defs>

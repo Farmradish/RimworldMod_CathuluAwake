@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GameConditionDef>
+		<defName>Nr_ConditionOminousLight</defName>
+		<conditionClass>NyaronCathulu.GameCondition_OminousLight</conditionClass> 
+		<label>불길한 빛</label>
+		<description>태양빛이 붉어지고 불길한 기운이 느껴집니다. 식물들이 자라기 힘들어지고 가끔씩 불길한 시선이 느껴집니다.</description>
+		<letterText>태양빛이 붉어지고 불길한 기운이 느껴집니다. 식물들이 자라기 힘들어지고 가끔씩 불길한 시선이 느껴집니다.</letterText>
+		<letterDef>ThreatSmall</letterDef>
+		<weatherDef>Clear</weatherDef>
+		<canBePermanent>true</canBePermanent>
+		<natural>false</natural>
+	</GameConditionDef>
+	
+		<GameConditionDef>
+		<defName>Nr_ConditionOminousLightHeavy</defName>
+		<conditionClass>NyaronCathulu.GameCondition_OminousLightHeavy</conditionClass> 
+		<label>완전해진 불길한 빛</label>
+		<description>태양빛이 붉어지고 불길한 기운이 느껴집니다. 식물들이 자라기 힘들어지고 가끔씩 불길한 시선이 느껴집니다.</description>
+		<letterText>태양빛이 붉어지고 불길한 기운이 느껴집니다. 식물들이 자라기 힘들어지고 가끔씩 불길한 시선이 느껴집니다.</letterText>
+		<letterDef>ThreatSmall</letterDef>
+		<weatherDef>Clear</weatherDef>
+		<canBePermanent>true</canBePermanent>
+		<natural>false</natural>
+	</GameConditionDef>
+
+</Defs>

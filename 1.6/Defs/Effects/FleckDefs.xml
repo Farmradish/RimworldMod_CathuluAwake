@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>Nr_ConvergingSpark</defName>
+        <graphicData>
+            <texPath>Things/Mote/SparkThrown</texPath> 
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>(1.5, 1.5)</drawSize>
+            <color>(1.0, 0.2, 0.2)</color> 
+		</graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.2</fadeInTime>
+        <solidTime>0.1</solidTime>
+        <fadeOutTime>0.2</fadeOutTime>
+    </FleckDef>
+	
+	    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>Nr_PestilenceMark</defName>
+        <graphicData>
+            <texPath>Things/Mote/Nr_PestilenceMark</texPath> 
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>(0.5, 0.5)</drawSize>
+			<color>(0.5, 0.2, 0.2)</color>
+		</graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.2</fadeInTime>
+        <solidTime>0.1</solidTime>
+        <fadeOutTime>0.2</fadeOutTime>
+    </FleckDef>
+	
+	    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>Nr_PestilenceSpark</defName>
+        <graphicData>
+            <texPath>Things/Mote/SparkThrown</texPath> 
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>(1.0, 1.0)</drawSize>
+            <color>(0.6, 0.1, 0.1)</color> 
+		</graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.1</fadeInTime>
+        <solidTime>0.2</solidTime>
+        <fadeOutTime>0.2</fadeOutTime>
+    </FleckDef>
+
+    <FleckDef ParentName="FleckBase">
+        <defName>Nr_CircuitPulse</defName>
+        <graphicData>
+            <texPath>Things/Mote/SparkFlash</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>(3.0, 3.0)</drawSize>
+            <color>(0.8, 0.1, 0.1, 0.5)</color> 
+		</graphicData>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <fadeInTime>0.4</fadeInTime>
+        <solidTime>0.1</solidTime>
+        <fadeOutTime>0.6</fadeOutTime>
+    </FleckDef>
+	
+	<ThingDef ParentName="MoteGlowDistorted">
+		<defName>Mote_PestilenceSpawnDistortion</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+		  <fadeInTime>0.2</fadeInTime>
+		  <fadeOutTime>0.3</fadeOutTime>
+		  <solidTime>99999</solidTime>
+		  <needsMaintenance>true</needsMaintenance>
+		  <fadeOutUnmaintained>true</fadeOutUnmaintained>
+		  <growthRate>-.25</growthRate>
+		</mote>
+		<graphicData>
+		  <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+		  <shaderType>MoteObeliskExplosionPulse</shaderType>
+		  <texPath>Things/Mote/PsychicDistortionApocriton</texPath>
+		  <shaderParameters>
+			<_PulseTex>/Things/Mote/ObeliskPulseWaves</_PulseTex>
+			<_distortionIntensity>0</_distortionIntensity>
+			<_ScrollSpeed>-.1</_ScrollSpeed>
+			<_ScrollScale>0.22</_ScrollScale>
+			<_distortionTint>(.5, .5, .5, 0)</_distortionTint>
+			<_pulseSpeed>1</_pulseSpeed>
+		  </shaderParameters>
+		  <drawSize>3</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>

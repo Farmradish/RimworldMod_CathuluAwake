@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BasePawn">
+    <defName>Nr_CathuluMinion</defName>
+    <label>Minion of Cathulu</label>
+    <description>Minion of Cathulu</description>
+    <drawOffscreen>true</drawOffscreen>
+    <hideStats>true</hideStats>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <statBases>
+      <ComfyTemperatureMin>-270</ComfyTemperatureMin>
+      <ComfyTemperatureMax>1000</ComfyTemperatureMax>
+      <ArmorRating_Sharp>0</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0</ArmorRating_Blunt>
+      <ArmorRating_Heat>10</ArmorRating_Heat>
+      <Flammability>0</Flammability>
+      <MeatAmount>0</MeatAmount>
+      <MoveSpeed>3</MoveSpeed>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MinimumContainmentStrength>110</MinimumContainmentStrength>
+      <ToxicResistance>1</ToxicResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+    </statBases>
+    <tradeability>None</tradeability>
+    <race>
+      <body>Metalhorror</body>
+      <fleshType>EntityMechanical</fleshType>
+      <thinkTreeMain>Metalhorror</thinkTreeMain>
+      <thinkTreeConstant>MetalhorrorConstant</thinkTreeConstant>
+      <intelligence>ToolUser</intelligence>
+      <foodType>None</foodType>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <bloodDef IsNull="True"/>
+      <hasMeat>false</hasMeat>
+      <lifeExpectancy>2500</lifeExpectancy>
+      <baseHealthScale>0.6</baseHealthScale>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <trainability>None</trainability>
+      <lifeStageAges>
+        <li>
+          <def>MetalhorrorLarva</def>
+        </li>
+        <li>
+          <def>MetalhorrorJuvenile</def>
+          <minAge>0.016667</minAge>
+        </li>
+        <li>
+          <def>MetalhorrorMature</def>
+          <minAge>0.05</minAge>
+        </li>
+      </lifeStageAges>
+      <hediffGiverSets>
+        <li>AnomalyEntity</li>
+      </hediffGiverSets>
+      <hasCorpse>false</hasCorpse>
+    </race>
+    <comps>
+      <li Class="CompProperties_EffecterOnDeath">
+        <effecterDef>MetalhorrorDeath</effecterDef>
+      </li>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          
+          <li>
+            <offset>(-.2, 0, .4)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.2, 0, .4)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.3, 0, -.3)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.3, 0, -.3)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>4</bioferriteDensity>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <anomalyKnowledge>4</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left blade</label>
+        <labelNoLocation>blade</labelNoLocation>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right blade</label>
+        <labelNoLocation>blade</labelNoLocation>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <killedLeavingsRanges>
+      <Bioferrite>10~20</Bioferrite>
+      <Shard>0~1</Shard>
+    </killedLeavingsRanges>
+  </ThingDef>
+  
+  
+</Defs>

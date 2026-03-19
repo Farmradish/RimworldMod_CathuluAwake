@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef>
+        <defName>Nr_Pestilence</defName>
+        <label>Pestilence</label>
+        <thingClass>NyaronCathulu.Pestilence</thingClass>
+		<category>Ethereal</category>
+		<selectable>false</selectable> 
+		<drawerType>RealtimeOnly</drawerType>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<drawOffscreen>true</drawOffscreen>
+        <statBases>
+        </statBases>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThoughtDef>
+        <defName>Nr_ThoughtOminousGaze</defName>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <durationDays>1</durationDays>
+		<stackLimit>10</stackLimit> 
+        <stackedEffectMultiplier>0.33</stackedEffectMultiplier> <stages>
+            <li>
+                <label>Ominous gaze</label>
+                <description>I feel an ominous gaze.</description>
+                <baseMoodEffect>-3</baseMoodEffect> 
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

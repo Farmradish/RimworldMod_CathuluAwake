@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef>
+    <defName>Nr_PawnKindCathuluMinion</defName>
+    <label>minion of cathulu</label>
+    <race>Nr_CathuluMinion</race>
+    <allowOldAgeInjuries>false</allowOldAgeInjuries>
+    <defaultFactionDef>Entities</defaultFactionDef>
+    <immuneToGameConditionEffects>true</immuneToGameConditionEffects>
+    <preventIdeo>true</preventIdeo>
+    <combatPower>300</combatPower>
+    <aiAvoidCover>true</aiAvoidCover>
+    <canStrip>false</canStrip>
+    <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Metalhorror/Metalhorror_Larva</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Metalhorror/Metalhorror_Juvenile</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.6</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Metalhorror/Metalhorror_Mature</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  
+</Defs>

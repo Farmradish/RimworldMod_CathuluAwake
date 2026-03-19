@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyDef>
+	  <defName>CopycatBody</defName>
+	  <label>카피캣</label>
+	  <corePart>
+		<def>CopycatCore</def> 
+		<coverage>1.0</coverage> 
+		<groups>
+		  <li>Torso</li>
+		</groups>
+		<parts>
+		  <li>
+			<def>CopycatBrain</def> 
+			<coverage>0.0</coverage> 
+			<depth>Hidden</depth>
+		  </li>
+		  <li>
+			<def>CopycatLegs</def> 
+			<coverage>0.0</coverage>
+			<depth>Hidden</depth>
+		  </li>
+		</parts>
+	  </corePart>
+	</BodyDef>
+
+	<BodyPartDef>
+		<defName>CopycatCore</defName>
+		<label>형체</label>
+		<hitPoints>500</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>
+
+  <BodyPartDef>
+    <defName>CopycatBrain</defName>
+    <label>사고</label>
+    <hitPoints>10</hitPoints> 
+	<solid>true</solid>
+    <tags>
+      <li>ConsciousnessSource</li> </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>CopycatAppendages</defName>
+    <label>의지</label>
+    <hitPoints>10</hitPoints>
+    <solid>true</solid>
+    <tags>
+      <li>MovingLimbCore</li> 
+	  <li>ManipulationLimbCore</li> 
+	</tags>
+  </BodyPartDef>
+	
+</Defs>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IncidentDef ParentName="AnomalyIncidentBase">
+        <defName>Nr_IncidentOminousLight</defName>
+        <label>ominous light</label>
+        <minAnomalyThreatLevel>0</minAnomalyThreatLevel>
+		<targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+		<category>ThreatBig</category>
+        <workerClass>NyaronCathulu.IncidentWorker_OminousLight</workerClass>
+        <gameCondition>Nr_ConditionOminousLight</gameCondition>
+        <letterLabel>심연의 안개</letterLabel>
+        <letterText>불길한 안개가 몰려옵니다...</letterText>
+        <letterDef>ThreatBig</letterDef>
+        <baseChance>0.5</baseChance> 
+		<durationDays>1.5~3.0</durationDays>
+		<minRefireDays>15</minRefireDays>
+		<earliestDay>0</earliestDay>
+	</IncidentDef>
+</Defs>

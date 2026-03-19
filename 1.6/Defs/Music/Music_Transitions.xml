@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MusicTransitionDef>
+    <defName>OminousLight</defName>
+    <workerType>NyaronCathulu.OminousLightTransition</workerType>
+    <sequence>HorrorRelax</sequence>
+    <dangerRequirement>RequiresNoDanger</dangerRequirement>
+    <priority>100</priority>
+  </MusicTransitionDef>
+
+</Defs>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Nyaron race Addon - Cathulu awakening</name>
+	<author>Farmradish</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>Farmradish.Cathulu</packageId>
+	<description>림월드의 어노말리DLC및 종족(Nyaron)모드의 확장인 캣후루의 각성 모드입니다.</description>
+		<modDependencies>
+		<li>
+		  <packageId>Farmradish.Nyaron</packageId>
+		  <displayName>Nyaron race</displayName>
+		  <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854376306</steamWorkshopUrl>
+		</li>
+    </modDependencies>
+</ModMetaData>
